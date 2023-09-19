@@ -1,10 +1,8 @@
-//!Make sure this is built being displayed with console.log() speifically for this project
-//!Create a function named getComputerChoice that will randomly return either rock, paper, or scissors 
+//Make sure this is built being displayed with console.log() speifically for this project
+//!create a function named getComputerChoice that will randomly return either rock, paper, or scissors 
 //!Write a function that plays a single round between human choice and random computer choice, then have it return a string like "paper beat rock you win"
 //!Make sure the human input isnt case senstive so they can enter say rOck for example
-//Create a new function game(). Use the previous function to create a 5 round game that keeps socre and reports a winner/loser
-
-
+//create a new function game(). Use the previous function to create a 5 round game that keeps socre and reports a winner/loser
 
 
 
@@ -14,6 +12,8 @@ function getComputerChoice(){
   const randomChoice = Math.floor(Math.random() * 3);
   return RPS[randomChoice];
 }
+
+
 
 
 //Prompt(s) 2 & 3
@@ -52,10 +52,8 @@ function playerVsComputer(){
   }
 
 }
-
+const winnerLosser = playerVsComputer();
 
 function game(){
-  const winnerLoser = playerVsComputer();
-  console.log(winnerLoser);
+
 }
-repeatFunction(game, 5);
