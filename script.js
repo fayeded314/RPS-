@@ -52,8 +52,15 @@ function playerVsComputer(){
   }
 
 }
-const winnerLosser = playerVsComputer();
 
-function game(){
-
+//Looping the game without loops Prompt 5
+const totalRounds = 5;
+const gameRound = 1;
+function game(gameRound, totalRounds){
+  const repeatPlayerVsComputer = playerVsComputer();
+  if (gameRound == totalRounds){
+    return console.log("Game Results");
+  }
+game(gameRound + 1, totalRounds);
 }
+game(1, 5);
